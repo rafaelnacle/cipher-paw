@@ -92,8 +92,6 @@ let characters = [
   '/',
 ];
 
-console.log(characters.length);
-
 const firstPassEl = document.getElementById('firstPass');
 const secondPassEl = document.getElementById('secondPass');
 const dialogEl = document.getElementById('dialog');
