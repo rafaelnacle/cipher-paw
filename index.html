@@ -1,0 +1,89 @@
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Karla:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <main>
+        <h1>Generate a</h1>
+        <span class="span-text">random password</span>
+        <p class="sub-text">Never use an insecure password again.</p>
+        <section class="options-wrapper">
+          <button class="generate-btn" onclick="generatePassword()">
+            Generate passwords
+          </button>
+
+          <div class="length-wrapper">
+            <div>
+              <p class="password-length-text">Password Length</p>
+            </div>
+            <div class="slider-wrapper">
+              <input
+                id="password-length"
+                type="range"
+                min="10"
+                max="50"
+                step="1"
+                value="0"
+                onchange="selectLength()"
+              /><span id="result"></span>
+            </div>
+          </div>
+        </section>
+        <section class="radio-wrapper">
+          <div>
+            <input
+              type="checkbox"
+              id="symbols"
+              name="options"
+              value="symbols"
+              checked
+            />
+            <label for="symbols"> Symbols </label>
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              id="numbers"
+              name="options"
+              value="numbers"
+              checked
+            />
+            <label for="numbers"> Numbers </label>
+          </div>
+        </section>
+        <hr />
+        <section class="password-display-container">
+          <p
+            class="password"
+            id="firstPass"
+            onclick="copyFirstPassToClipboard()"
+          ></p>
+          <p
+            class="password"
+            id="secondPass"
+            onclick="copySecondPassToClipboard()"
+          ></p>
+
+          <dialog id="dialog">
+            <form method="dialog">
+              <button onclick="close()" id="dialog-btn">X</button>
+            </form>
+            <p>Password copied to clipboard</p>
+          </dialog>
+        </section>
+      </main>
+    </div>
+    <script src="assets/js/index.js"></script>
+  </body>
+</html>

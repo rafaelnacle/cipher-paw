@@ -1,0 +1,172 @@
+:root {
+    --text: #f8f8f2;
+    --subText: #f8f8f2;
+    --featured: #ff79c6;
+    --background: #282a36;
+    --mainButton: #50fa7b;
+    --mainButtonText: #242423;
+    --mainButtonHover: #ff79c6;
+    --separator: #44475a;
+    --secondary: #44475a;
+    --secondaryHighlight: #44475a;
+    --passwordText: #50fa7b;
+}
+
+body {
+    margin: 0;
+    background: var(--background);
+    font-family: 'Inter', sans-serif;
+    color: var(--text);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 550px;
+    height: 550px;
+    margin: 150px auto 0 auto;
+}
+
+h1 {
+    font-weight: 800;
+    font-size: 40px;
+    margin: 0;
+    font-family: 'Karla', sans-serif;
+}
+
+.span-text {
+    color: var(--featured);
+    font-weight: 800;
+    font-size: 40px;
+    font-family: 'Karla', sans-serif;
+}
+
+.sub-text {
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 10px;
+    margin-bottom: 51px;
+    color: var(--subText);
+}
+
+.generate-btn {
+    border: none;
+    width: 191px;
+    height: 42px;
+    background: var(--mainButton);
+    color: var(--mainButtonText);
+    border-radius: 6px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    user-select: none;
+}
+
+.generate-btn:hover {
+    background: var(--mainButtonHover);
+}
+
+hr {
+    border: 1px solid var(--separator);
+    margin: 35px 0;
+}
+
+.password-display-container {
+    display: flex;
+}
+
+.password {
+    background: var(--secondary);
+    width: 211px;
+    min-height: 39px;
+    border-radius: 6px;
+    text-align: center;
+    line-height: 35px;
+    color: var(--passwordText);
+    overflow-wrap: break-word;
+}
+
+.password:hover {
+    background: var(--secondaryHighlight);
+    cursor: pointer;
+}
+
+#firstPass {
+    margin-right: 12px;
+}
+
+#secondPass {
+    margin-left: 12px;
+}
+
+#dialog {
+    background: var(--background);
+    color: var(--featured);
+    user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+#dialog-btn {
+    cursor: pointer;
+    background: var(--background);
+    color: var(--featured);
+    border: none;
+    user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+.options-wrapper {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+}
+
+.length-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.slider-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+#password-length {
+    -webkit-appearance: none;
+    accent-color: var(--featured);
+    background: var(--secondaryHighlight);
+    border-radius: 6px;
+}
+
+.password-length-text {
+    margin-right: 20px;
+}
+
+#result {
+    margin-left: 20px;
+    color: var(--mainButton);
+    font-weight: bold; 
+    padding: 4px;
+    border-radius: 6px;
+    border: 2px solid var(--featured);
+}
+
+.radio-wrapper {
+    margin-top: 20px;
+    display: inline-flex;
+    column-gap: 20px;
+    user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+#symbols {
+    background: var(--featured);
+}
+
+
